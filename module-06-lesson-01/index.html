@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleventh lesson</title>
+    <style>
+        .foo {
+            color: red;
+            font-size: 10px;
+        }
+        .another-class {
+            background-color: blue;
+        }
+        .visible {
+            font-size: 30px;
+        }
+        .bar {
+            font-weight: 700;
+        }
+        .baz {
+            font-style: italic;
+            font-size: 30px;
+        }
+        .hover-class:hover{
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h3>A h3 element</h3>
+    <h1>Check our list!</h1>
+    <div class="list-container" >
+        <ul id="first-ul">
+            <li class="list-item">First item</li>
+            <li class="list-item">Second item</li>
+            <li >Third item</li>
+        </ul>
+    </div>
+    <hr>
+    <div class="p-container">
+        <p class="paragraph">First paragraph</p>
+        <p class="paragraph">Second paragraph</p>
+    </div>
+    <hr>
+    <a href="#" target="_blank">Click me</a>
+    <a href="#" target="_blank">Without target</a>
+    <hr>
+    <h4 class="my-h4" target="_blank">A h4 element</h4>
+    <h3>A h3 element</h3>
+    <h4>A h4 element</h4>
+    <h3>A h3 element</h3>
+    <h4 class="my-h4" target="_blank">A h4 element</h4>
+    <hr>
+    <button onclick="changeInnerHTML()">Change inner HTML</button>
+    <hr>
+    <div id="checkClassList">
+        Try to change my classes!
+    </div>
+
+    <hr>
+    <h1>Creating and removal elements</h1>
+    <div id="div1">
+        <p id="p1">This is a paragraph.</p>
+        <p id="p2">This is another paragraph.</p>
+    </div>
+    <button onclick="myFunction()">Remove Element</button>
+    <hr>
+    <h1>insertAdjacentHTML</h1>
+    <h2 id="myH2">My Header</h2>
+    <button onclick="myFunction()">Insert</button>
+    
+    
+    <script src="js/main.js"></script>
+    <script src="js/properties.js"></script>
+</body>
+</html>

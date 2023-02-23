@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events propagation</title>
+    <style>
+        #bubble-div {
+            padding: 20px;
+            background-color: green;
+            width: max-content;
+        }
+
+        #bubble-span {
+            display: block;
+            padding: 20px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bubble-div">
+        <span id="bubble-span">
+            <button id="bubble-button">Click Me!</button>
+        </span>
+      </div>
+    <hr>
+    <script src="./js/events-propagation.js"></script>
+</body>
+
+</html>

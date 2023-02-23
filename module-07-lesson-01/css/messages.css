@@ -1,0 +1,23 @@
+.message {
+    padding: 10px 20px 10px;
+    border: solid 2px #26a9f5;
+    position: relative;
+  }
+  
+  .message__close-btn {
+    position: absolute;
+    display: block;
+    width: 24px;
+    height: 24px;
+    top: 0;
+    right: 10px;
+    border: none;
+    background: transparent;
+    color: darkred;
+    padding: 0;
+    cursor: pointer;
+  }
+
+img{
+    height: 200px;
+}

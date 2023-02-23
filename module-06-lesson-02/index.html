@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bubble-div {
+            padding: 20px;
+            background-color: green;
+            width: max-content;
+        }
+
+        #bubble-span {
+            display: block;
+            padding: 20px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <button id="setTime">The time is?</button>
+
+    <p id="demo"></p>
+    <hr>
+    <h1>Prevent default</h1>
+    <a id="myLink" href="https://www.google.com/" target="_blank">Navigate</a>
+    
+    <div id="output-box"></div>
+    <hr>
+    <h1>Bubble events</h1>
+    
+    <div id="bubble-div">
+        <span id="bubble-span">
+            <button id="bubble-button">Click Me!</button>
+        </span>
+      </div>
+    <hr>
+    <h1>Remove events</h1>
+    <div id="removeEventDiv">This orange element has an onmousemove event handler that displays a random number when you move the mouse inside.
+        <p>Click "Remove" to remove the event handler.</p>
+        <button id="removeEvent">Remove</button>
+    </div>
+    <p id="removeDemo"></p>
+    <hr>
+    <h1>Keyboard events</h1>
+    <p id="outputKeyup"></p>
+    <hr>
+    <h1>Form events</h1>
+    <form class="form" autocomplete="off">
+        <input type="text" name="login" placeholder="Login">
+        <input type="password" name="password" placeholder="Password">
+        <button class="btn" type="submit">Register</button>
+    </form>
+    <br><br><br><br><br>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
