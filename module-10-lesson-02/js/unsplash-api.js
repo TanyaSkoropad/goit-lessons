@@ -9,20 +9,40 @@ export class UnsplashAPI {
         this.query = null;
     }
 
-    fetchPhotos(){
+    async fetchPhotos(){
         const params = new URLSearchParams({
             query: this.query,
             page: this.page,
-            per_page: 50,
-            client_id: this.#API_KEY,
-            color: 'yellow'
+            per_page: 10,
+            client_id: this.#API_KEY
         });
-        return fetch(`${this.#BASE_URL}/search/photos?${params}`).then(response => {
-            if(!response.ok) {
-                throw new Error(response.status);
-            }
-            return response.json()
-        })
+        const photosResponse = await fetch(`${this.#BASE_URL}/search/photos?${params}`);
+        if(!photosResponse.ok) {
+            throw new Error(photosResponse.status);
+        }
+        return photosResponse.json()
+        // try {
+        //     const params = new URLSearchParams({
+        //         query: this.query,
+        //         page: this.page,
+        //         per_page: 10,
+        //         client_id: this.#API_KEY
+        //     });
+        //     const photosResponse = await fetch(`${this.#BASE_URL}/search/photos?${params}`);
+        //     if(!photosResponse.ok) {
+        //         throw new Error(photosResponse.status);
+        //     }
+        //     return photosResponse.json()
+        // } catch(error){
+        //     console.log(error);
+        // }
+        
+        // return fetch(`${this.#BASE_URL}/search/photos?${params}`).then(response => {
+        //     if(!response.ok) {
+        //         throw new Error(response.status);
+        //     }
+        //     return response.json()
+        // })
     }
 }
 
